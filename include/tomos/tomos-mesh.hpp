@@ -1,6 +1,8 @@
 #ifndef TOMOS_MESH_HPP__
 #define TOMOS_MESH_HPP__
 
+#include <filesystem>
+
 #include "tomos-elements.hpp"
 #include "tomos-nodes.hpp"
 #include "tomos-version.hpp"
@@ -93,6 +95,9 @@ namespace decoder {
         }
         return msh;
     }
+
+    Mesh
+    decode(const std::filesystem::path& path);
 } // namespace mesh
 } // namespace tomos
 

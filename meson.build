@@ -5,7 +5,7 @@ dependencies  = [dependency('boost'), dependency('OpenCL')]
 
 mesh = library(
   meson.project_name()
-  , []
+  , ['source/tomos-mesh.cpp']
   , include_directories : includes
   , dependencies        : dependencies
   , install             : true
